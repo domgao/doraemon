@@ -1,4 +1,4 @@
-package com.doraemon.commons.db;
+package com.doraemon.commons.util;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -12,16 +12,7 @@ import java.time.LocalDateTime;
  * @date 2022年05月02日 18:14
  * @since 1.0
  */
-public abstract class BaseField implements Serializable {
-
-    /*主键Id*/
-    private Long id;
-
-    /*创建时间*/
-    private LocalDateTime createTime;
-
-    /*修改时间*/
-    private LocalDateTime updateTime;
+public abstract class AbstractToString implements Serializable {
 
     @Override
     public String toString() {
